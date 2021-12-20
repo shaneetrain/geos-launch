@@ -17,7 +17,7 @@ const GeoImageTop = ({ pathHead, pathBody }) => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            {head ? (
+            <div className={`${head ? "" : "hidden"}`}>
                 <Image
                     src={pathHead}
                     width="500"
@@ -26,15 +26,17 @@ const GeoImageTop = ({ pathHead, pathBody }) => {
                     alt={pathHead}
                     priority={true}
                 />
-            ) : (
+            </div>
+            <div className={`${head ? "hidden" : ""}`}>
                 <Image
                     src={pathBody}
                     width="500"
                     height="500"
                     // layout="responsive"
                     alt={pathBody}
+                    priority={true}
                 />
-            )}
+            </div>
         </div>
     );
 };
