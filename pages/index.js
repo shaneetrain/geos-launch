@@ -3,19 +3,10 @@ import Image from "next/image";
 import GeoImageTop from "../components/GeoImageTop";
 import GeoImageBottom from "../components/GeoImageBottom";
 import styles from "../styles/Home.module.css";
-// import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
     return (
         <div className="bg-primary h-screen w-screen flex justify-center font-relative">
-            {/* <AnimatedCursor
-                innerSize={30}
-                outerSize={0}
-                color="255,227,79"
-                outerAlpha={0.2}
-                innerScale={0.3}
-                outerScale={5}
-            /> */}
             <Head>
                 <title>geos</title>
                 <meta
