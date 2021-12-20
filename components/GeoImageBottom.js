@@ -24,6 +24,7 @@ const GeoImageBottom = ({ pathHead, pathBody }) => {
                     height="500"
                     // layout="responsive"
                     alt={pathHead}
+                    priority={true}
                 />
             ) : (
                 <Image
