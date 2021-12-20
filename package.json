@@ -1,25 +1,26 @@
 {
-  "name": "geos-reveal",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "custom-cursor-react": "^1.0.5",
-    "next": "12.0.7",
-    "react": "17.0.2",
-    "react-animated-cursor": "^2.2.0",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "eslint": "8.5.0",
-    "eslint-config-next": "12.0.7",
-    "postcss": "^8.2.15",
-    "tailwindcss": "^3.0.7"
-  }
+    "name": "geos-reveal",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "custom-cursor-react": "^1.0.5",
+        "next": "12.0.7",
+        "react": "17.0.2",
+        "react-animated-cursor": "^2.2.0",
+        "react-dom": "17.0.2",
+        "tailwindcss": "^3.07"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.0",
+        "eslint": "8.5.0",
+        "eslint-config-next": "12.0.7",
+        "postcss": "^8.2.15",
+        "tailwindcss": "^3.0.7"
+    }
 }
