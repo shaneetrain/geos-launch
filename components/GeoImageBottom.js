@@ -2,13 +2,13 @@ import Image from "next/image";
 import { useState } from "react";
 
 const GeoImageBottom = ({ pathHead, pathBody }) => {
-    const [path, setPath] = useState(pathBody);
+    const [head, setHead] = useState(false);
     const handleMouseEnter = () => {
-        setPath(pathHead);
+        setHead(true);
     };
 
     const handleMouseLeave = () => {
-        setPath(pathBody);
+        setHead(false);
     };
 
     return (
@@ -17,13 +17,23 @@ const GeoImageBottom = ({ pathHead, pathBody }) => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <Image
-                src={path}
-                width="500"
-                height="500"
-                // layout="responsive"
-                alt={path}
-            />
+            {head ? (
+                <Image
+                    src={pathHead}
+                    width="500"
+                    height="500"
+                    // layout="responsive"
+                    alt={pathHead}
+                />
+            ) : (
+                <Image
+                    src={pathBody}
+                    width="500"
+                    height="500"
+                    // layout="responsive"
+                    alt={pathBody}
+                />
+            )}
         </div>
     );
 };
