@@ -13,7 +13,7 @@ export default function Home() {
                     name="description"
                     content="geos generative metaverse project"
                 />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/geos.png" />
             </Head>
             <div className="2xl:px-16 xl:px-12 lg:px-8 px-6 py-6">
                 <div className="grid grid-cols-5 justify-center items-center">
