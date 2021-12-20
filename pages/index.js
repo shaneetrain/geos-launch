@@ -73,44 +73,44 @@ export default function Home() {
                         </div>
                     </div>
                     <GeoImageTop
-                        pathBody="/images/Geo01_body.jpg"
-                        pathHead="/images/Geo01_head.jpg"
+                        pathBody="/images/Geo01_body.png"
+                        pathHead="/images/Geo01_head.png"
                     />
                     <GeoImageTop
-                        pathBody="/images/Geo02_body.jpg"
-                        pathHead="/images/Geo02_head.jpg"
+                        pathBody="/images/Geo02_body.png"
+                        pathHead="/images/Geo02_head.png"
                     />
                     <GeoImageTop
-                        pathBody="/images/Geo03_body.jpg"
-                        pathHead="/images/Geo03_head.jpg"
+                        pathBody="/images/Geo03_body.png"
+                        pathHead="/images/Geo03_head.png"
                     />
                     <GeoImageTop
-                        pathBody="/images/Geo04_body.jpg"
-                        pathHead="/images/Geo04_head.jpg"
+                        pathBody="/images/Geo04_body.png"
+                        pathHead="/images/Geo04_head.png"
                     />
                     <GeoImageTop
-                        pathBody="/images/Geo05_body.jpg"
-                        pathHead="/images/Geo05_head.jpg"
+                        pathBody="/images/Geo05_body.png"
+                        pathHead="/images/Geo05_head.png"
                     />
                     <GeoImageBottom
-                        pathBody="/images/Geo06_body.jpg"
-                        pathHead="/images/Geo06_head.jpg"
+                        pathBody="/images/Geo06_body.png"
+                        pathHead="/images/Geo06_head.png"
                     />
                     <GeoImageBottom
-                        pathBody="/images/Geo07_body.jpg"
-                        pathHead="/images/Geo07_head.jpg"
+                        pathBody="/images/Geo07_body.png"
+                        pathHead="/images/Geo07_head.png"
                     />
                     <GeoImageBottom
-                        pathBody="/images/Geo08_body.jpg"
-                        pathHead="/images/Geo08_head.jpg"
+                        pathBody="/images/Geo08_body.png"
+                        pathHead="/images/Geo08_head.png"
                     />
                     <GeoImageBottom
-                        pathBody="/images/Geo09_body.jpg"
-                        pathHead="/images/Geo09_head.jpg"
+                        pathBody="/images/Geo09_body.png"
+                        pathHead="/images/Geo09_head.png"
                     />
                     <GeoImageBottom
-                        pathBody="/images/Geo10_body.jpg"
-                        pathHead="/images/Geo10_head.jpg"
+                        pathBody="/images/Geo10_body.png"
+                        pathHead="/images/Geo10_head.png"
                     />
                     <div className="col-span-3"></div>
                     <div className="flex flex-row col-span-2">
