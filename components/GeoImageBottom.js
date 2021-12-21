@@ -20,8 +20,8 @@ const GeoImageBottom = ({ pathHead, pathBody, color }) => {
             <div className={`${head ? "" : "hidden"}`}>
                 <Image
                     src={pathHead}
-                    width="500"
-                    height="500"
+                    width="1000"
+                    height="1000"
                     layout="responsive"
                     alt={pathHead}
                     priority={true}
@@ -31,8 +31,8 @@ const GeoImageBottom = ({ pathHead, pathBody, color }) => {
             <div className={`${head ? "hidden" : ""}`}>
                 <Image
                     src={pathBody}
-                    width="500"
-                    height="500"
+                    width="1000"
+                    height="1000"
                     layout="responsive"
                     alt={pathBody}
                     priority={true}
