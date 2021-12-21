@@ -13,7 +13,7 @@ const GeoImageBottom = ({ pathHead, pathBody, color }) => {
 
     return (
         <div
-            className="border border-secondary  mb-6 xl:mb-8 2xl:mb-12 select-none"
+            className="border border-secondary mb-6 xl:mb-8 2xl:mb-12 select-none"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
@@ -22,7 +22,7 @@ const GeoImageBottom = ({ pathHead, pathBody, color }) => {
                     src={pathHead}
                     width="500"
                     height="500"
-                    // layout="responsive"
+                    layout="responsive"
                     alt={pathHead}
                     priority={true}
                     className={`${color}`}
@@ -33,7 +33,7 @@ const GeoImageBottom = ({ pathHead, pathBody, color }) => {
                     src={pathBody}
                     width="500"
                     height="500"
-                    // layout="responsive"
+                    layout="responsive"
                     alt={pathBody}
                     priority={true}
                 />

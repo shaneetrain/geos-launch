@@ -15,7 +15,7 @@ const GeoImageTop = ({ pathHead, pathBody, color }) => {
 
     return (
         <div
-            className="border border-secondary  mt-6 xl:mt-8 2xl:mt-12 select-none"
+            className="border  max-w-full h-auto border-secondary  mt-6 xl:mt-8 2xl:mt-12 select-none"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
@@ -24,7 +24,7 @@ const GeoImageTop = ({ pathHead, pathBody, color }) => {
                     src={pathHead}
                     width="500"
                     height="500"
-                    // layout="responsive"
+                    layout="responsive"
                     alt={pathHead}
                     priority={true}
                     className={`${color}`}
@@ -35,7 +35,7 @@ const GeoImageTop = ({ pathHead, pathBody, color }) => {
                     src={pathBody}
                     width="500"
                     height="500"
-                    // layout="responsive"
+                    layout="responsive"
                     alt={pathBody}
                     priority={true}
                 />
