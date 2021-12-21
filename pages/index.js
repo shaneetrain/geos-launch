@@ -30,7 +30,7 @@ export default function Home() {
                 />
                 <link rel="icon" href="/geos.png" />
             </Head>
-            {/* <Cursor color={accent} /> */}
+            <Cursor color={accent} />
             <div className="2xl:px-16 xl:px-12 lg:px-8 px-6 py-6">
                 <div className="grid grid-cols-5 justify-center items-center">
                     <div className="flex flex-row">
