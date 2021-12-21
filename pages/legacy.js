@@ -1,12 +1,35 @@
 import Head from "next/head";
+import Image from "next/image";
 import GeoImageTop from "../components/GeoImageTop";
 import GeoImageBottom from "../components/GeoImageBottom";
+import styles from "../styles/Home.module.css";
 import { useState } from "react";
+import Link from "next/link";
 import Credits from "../components/Credits";
-import Cursor from "../components/Cursor";
-import { accentColors } from "../utils/accentColors";
 
 export default function Home() {
+    const accentColors = [
+        "#f97612",
+        "#ffbbd8",
+        "#004d3f",
+        "#fbd599",
+        "#283cea",
+        "#ffe44e",
+        "#ff9d82",
+        "#e69dd4",
+        "#ecb553",
+        "#f61918",
+        "#ff4d29",
+        "#623d52",
+        "#edff44",
+        "#5d5f30",
+        "#005d7f",
+        "#b363b6",
+        "#7ea8fd",
+        "#39a46b",
+        "#ffffff",
+        "#000000",
+    ];
     const [accent, setAccent] = useState(0);
 
     const handleClick = () => {
@@ -30,7 +53,6 @@ export default function Home() {
                 />
                 <link rel="icon" href="/geos.png" />
             </Head>
-            <Cursor color={accent} />
             <div className="2xl:px-16 xl:px-12 lg:px-8 px-6 py-6">
                 <div className="grid grid-cols-5 justify-center items-center">
                     <div className="flex flex-row">
