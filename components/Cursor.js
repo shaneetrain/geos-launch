@@ -10,8 +10,11 @@ const Cursor = ({ color }) => {
     const cursorVisible = useRef(true);
     const cursorEnlarged = useRef(false);
 
-    const endX = useRef(window.innerWidth / 2);
-    const endY = useRef(window.innerHeight / 2);
+    if (typeof window !== "undefined") {
+        const endX = useRef(window.innerWidth / 2);
+        const endY = useRef(window.innerHeight / 2);
+    }
+
     const _x = useRef(0);
     const _y = useRef(0);
 
