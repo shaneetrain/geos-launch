@@ -25,6 +25,7 @@
     border-radius: 50%;
     opacity: 1;
     transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+    z-index: 10;
 }
 
 .cursor-dot {
