@@ -5,6 +5,9 @@ import { useState } from "react";
 import Credits from "../components/Credits";
 import Cursor from "../components/Cursor";
 import { accentColors } from "../utils/accentColors";
+import Geos from "../components/Geos";
+import Blurb from "../components/Blurb";
+import Desc from "../components/Desc";
 
 export default function Home() {
     const [accent, setAccent] = useState(0);
@@ -19,40 +22,28 @@ export default function Home() {
 
     return (
         <div
-            className="bg-primary h-screen w-screen flex justify-center font-relative select-none"
+            className=" h-screen w-screen flex justify-center items-center font-relative select-none"
             onClick={handleClick}
         >
             <Head>
                 <title>geos</title>
                 <meta
                     name="description"
-                    content="geos generative metaverse project"
+                    content="geos - A generative metaverse project"
                 />
                 <link rel="icon" href="/geos.png" />
             </Head>
             <Cursor color={accent} />
-            <div className="2xl:px-16 xl:px-12 lg:px-8 px-6 py-6">
+            <div className="2xl:px-16 xl:px-12 lg:px-8 px-6 py-6 h-screen w-screen">
+                <div className="grid grid-cols-4 auto-cols-max justify-center items-center">
+                    <Geos accent={accent} />
+                    <Blurb />
+                    <Desc />
+                    <div className="text-4xl flex items-center justify-end">
+                        Coming Soon.
+                    </div>
+                </div>
                 <div className="grid grid-cols-5 justify-center items-center">
-                    <div className="flex flex-row">
-                        <div className="items-center flex text-5xl">ge</div>
-                        <div
-                            style={{ color: `${accentColors[accent]}` }}
-                            className={`items-center flex text-5xl`}
-                        >
-                            o
-                        </div>
-                        <div className="items-center flex text-5xl">s</div>
-                    </div>
-                    <div className="flex items-center w-64">
-                        lorem ipsum dolor sit amet. connsectetur adipicsing
-                        elit.
-                    </div>
-                    <div className="flex items-center w-56">
-                        Generative Avatar Project. Coming Soon.
-                    </div>
-                    <div className="flex flex-row col-span-2">
-                        <Credits />
-                    </div>
                     <GeoImageTop
                         pathBody="/images/Geo01_body.png"
                         pathHead="/images/Geo01_head.png"
@@ -104,25 +95,26 @@ export default function Home() {
                         color="bg-accent12"
                     />
                     <div className="col-span-3"></div>
-                    <div className="flex flex-row col-span-2 justify-end">
-                        <div className="px-6 hover:text-hover text-4xl">
-                            <a
-                                href="https://twitter.com/GeosNFT"
-                                target="_blank"
-                                rel="noreferrer noopener"
-                            >
-                                ->Twitter
-                            </a>
-                        </div>
-                        <div className={`hover:text-hover px-6 text-4xl`}>
-                            <a
-                                href="https://discord.com"
-                                target="_blank"
-                                rel="noreferrer noopener"
-                            >
-                                ->Discord
-                            </a>
-                        </div>
+                </div>
+                <div className="grid grid-cols-6 justify-between">
+                    <div className="px-6 hover:text-hover text-4xl">
+                        <a
+                            href="https://twitter.com/GeosNFT"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            ->Twitter
+                        </a>
+                    </div>
+                    <Credits />
+                    <div className={`hover:text-hover px-6 text-4xl`}>
+                        <a
+                            href="https://discord.com"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            ->Discord
+                        </a>
                     </div>
                 </div>
             </div>

@@ -3,30 +3,10 @@ import GeoImageTop from "../components/GeoImageTop";
 import GeoImageBottom from "../components/GeoImageBottom";
 import { useState } from "react";
 import Credits from "../components/Credits";
+import Cursor from "../components/Cursor";
+import { accentColors } from "../utils/accentColors";
 
 export default function Home() {
-    const accentColors = [
-        "#f97612",
-        "#ffbbd8",
-        "#004d3f",
-        "#fbd599",
-        "#283cea",
-        "#ffe44e",
-        "#ff9d82",
-        "#e69dd4",
-        "#ecb553",
-        "#f61918",
-        "#ff4d29",
-        "#623d52",
-        "#edff44",
-        "#5d5f30",
-        "#005d7f",
-        "#b363b6",
-        "#7ea8fd",
-        "#39a46b",
-        "#ffffff",
-        "#000000",
-    ];
     const [accent, setAccent] = useState(0);
 
     const handleClick = () => {
@@ -50,6 +30,7 @@ export default function Home() {
                 />
                 <link rel="icon" href="/geos.png" />
             </Head>
+            <Cursor color={accent} />
             <div className="2xl:px-16 xl:px-12 lg:px-8 px-6 py-6">
                 <div className="grid grid-cols-5 justify-center items-center">
                     <div className="flex flex-row">
@@ -124,13 +105,23 @@ export default function Home() {
                     />
                     <div className="col-span-3"></div>
                     <div className="flex flex-row col-span-2 justify-end">
-                        <div className="px-6 hover:text-hover text-4xl cursor-pointer">
-                            <a href="https://twitter.com/GeosNFT">->Twitter</a>
+                        <div className="px-6 hover:text-hover text-4xl">
+                            <a
+                                href="https://twitter.com/GeosNFT"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                ->Twitter
+                            </a>
                         </div>
-                        <div
-                            className={`hover:text-hover px-6 text-4xl cursor-pointer`}
-                        >
-                            <a href="https://discord.com">->Discord</a>
+                        <div className={`hover:text-hover px-6 text-4xl`}>
+                            <a
+                                href="https://discord.com"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                ->Discord
+                            </a>
                         </div>
                     </div>
                 </div>

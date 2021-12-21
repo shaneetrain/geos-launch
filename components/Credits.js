@@ -2,9 +2,9 @@ import React from "react";
 
 const Credits = () => {
     return (
-        <>
-            <div>Project by</div>
-            <div className="px-2">
+        <div className="flex flex-row col-span-4 justify-center items-center">
+            <div className="px-3">Project by</div>
+            <div className="px-3">
                 <div className="flex flex-row">
                     <div className="px-1">Shane Hanlon</div>
                     <div className="px-1 text-inactive hover:text-hoverSocial">
@@ -25,6 +25,8 @@ const Credits = () => {
                         Twitter
                     </div>
                 </div>
+            </div>
+            <div className="px-3">
                 <div className="flex flex-row">
                     <div className="px-1">Christopher Rutledge</div>
                     <div className="px-1 text-inactive hover:text-hoverSocial">
@@ -46,7 +48,7 @@ const Credits = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
