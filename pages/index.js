@@ -4,6 +4,8 @@ import GeoImageTop from "../components/GeoImageTop";
 import GeoImageBottom from "../components/GeoImageBottom";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
+import Link from "next/link";
+import Credits from "../components/Credits";
 
 export default function Home() {
     const accentColors = [
@@ -71,51 +73,7 @@ export default function Home() {
                         Generative Avatar Project. Coming Soon.
                     </div>
                     <div className="flex flex-row col-span-2">
-                        <div>Project by</div>
-                        <div className="px-2">
-                            <div className="flex flex-row">
-                                <div className="px-1">Shane Hanlon</div>
-                                <div className="px-1 text-inactive cursor-pointer hover:text-hoverSocial">
-                                    Instagram
-                                </div>
-                                <div className="px-1 text-inactive"> / </div>
-                                <div className="px-1 text-inactive cursor-pointer hover:text-hoverSocial">
-                                    Twitter
-                                </div>
-                            </div>
-                            <div className="flex flex-row">
-                                <div className="px-1">
-                                    Rhea Lelina Manglapus
-                                </div>
-                                <div className="px-1 text-inactive cursor-pointer hover:text-hoverSocial">
-                                    Instagram
-                                </div>
-                                <div className="px-1 text-inactive"> / </div>
-                                <div className="px-1 text-inactive cursor-pointer hover:text-hoverSocial">
-                                    Twitter
-                                </div>
-                            </div>
-                            <div className="flex flex-row">
-                                <div className="px-1">Christopher Rutledge</div>
-                                <div className="px-1 text-inactive cursor-pointer hover:text-hoverSocial">
-                                    Instagram
-                                </div>
-                                <div className="px-1 text-inactive"> / </div>
-                                <div className="px-1 text-inactive cursor-pointer hover:text-hoverSocial">
-                                    Twitter
-                                </div>
-                            </div>
-                            <div className="flex flex-row">
-                                <div className="px-1">Seb Helene</div>
-                                <div className="px-1 text-inactive cursor-pointer hover:text-hoverSocial">
-                                    Instagram
-                                </div>
-                                <div className="px-1 text-inactive"> / </div>
-                                <div className="px-1 text-inactive cursor-pointer hover:text-hoverSocial">
-                                    Twitter
-                                </div>
-                            </div>
-                        </div>
+                        <Credits />
                     </div>
                     <GeoImageTop
                         pathBody="/images/Geo01_body.png"
@@ -168,14 +126,21 @@ export default function Home() {
                         color="bg-accent12"
                     />
                     <div className="col-span-3"></div>
-                    <div className="flex flex-row col-span-2">
+                    <div className="flex flex-row col-span-2 justify-end">
                         <div className="px-6 hover:text-hover text-4xl cursor-pointer">
-                            ->Twitter
+                            <a
+                                href="https://twitter.com/GeosNFT"
+                                target="_blank"
+                            >
+                                ->Twitter
+                            </a>
                         </div>
                         <div
                             className={`hover:text-hover px-6 text-4xl cursor-pointer`}
                         >
-                            ->Discord
+                            <a href="https://discord.com" target="_blank">
+                                ->Discord
+                            </a>
                         </div>
                     </div>
                 </div>
