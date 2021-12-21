@@ -3,7 +3,7 @@ import GeoImageTop from "../components/GeoImageTop";
 import GeoImageBottom from "../components/GeoImageBottom";
 import { useState } from "react";
 import Credits from "../components/Credits";
-// import Cursor from "../components/Cursor";
+import Cursor from "../components/Cursor";
 import { accentColors } from "../utils/accentColors";
 
 export default function Home() {
