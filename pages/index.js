@@ -106,19 +106,12 @@ export default function Home() {
                     <div className="col-span-3"></div>
                     <div className="flex flex-row col-span-2 justify-end">
                         <div className="px-6 hover:text-hover text-4xl cursor-pointer">
-                            <a
-                                href="https://twitter.com/GeosNFT"
-                                target="_blank"
-                            >
-                                ->Twitter
-                            </a>
+                            <a href="https://twitter.com/GeosNFT">->Twitter</a>
                         </div>
                         <div
                             className={`hover:text-hover px-6 text-4xl cursor-pointer`}
                         >
-                            <a href="https://discord.com" target="_blank">
-                                ->Discord
-                            </a>
+                            <a href="https://discord.com">->Discord</a>
                         </div>
                     </div>
                 </div>
