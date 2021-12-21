@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const GeoImageBottom = ({ pathHead, pathBody }) => {
+const GeoImageBottom = ({ pathHead, pathBody, color }) => {
     const [head, setHead] = useState(false);
     const handleMouseEnter = () => {
         setHead(true);
@@ -13,7 +13,7 @@ const GeoImageBottom = ({ pathHead, pathBody }) => {
 
     return (
         <div
-            className="border border-secondary  mb-6 xl:mb-8 2xl:mb-12"
+            className="border border-secondary  mb-6 xl:mb-8 2xl:mb-12 select-none"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
@@ -25,6 +25,7 @@ const GeoImageBottom = ({ pathHead, pathBody }) => {
                     // layout="responsive"
                     alt={pathHead}
                     priority={true}
+                    className={`${color}`}
                 />
             </div>
             <div className={`${head ? "hidden" : ""}`}>
