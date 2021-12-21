@@ -1,10 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import GeoImageTop from "../components/GeoImageTop";
 import GeoImageBottom from "../components/GeoImageBottom";
-import styles from "../styles/Home.module.css";
 import { useState } from "react";
-import Link from "next/link";
 import Credits from "../components/Credits";
 
 export default function Home() {
