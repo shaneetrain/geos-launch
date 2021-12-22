@@ -42,7 +42,7 @@ export default function Home() {
                     <Geos accent={accent} />
                     <Blurb />
                     <Desc />
-                    <div className="text-4xl flex items-center justify-end">
+                    <div className="text-5xl flex items-center justify-end">
                         Coming Soon.
                     </div>
                 </div>
@@ -99,14 +99,14 @@ export default function Home() {
                     />
                     <div className="col-span-3"></div>
                 </div>
-                <div className="grid grid-cols-6 justify-between">
+                <div className="grid grid-cols-6 justify-evenly py-8">
                     <div
                         style={
                             twitterHover
                                 ? { color: accentColors[accent] }
                                 : null
                         }
-                        className={`px-6 text-4xl`}
+                        className={` text-5xl flex justify-start items-center`}
                         onMouseOver={() => setTwitterHover(true)}
                         onMouseLeave={() => setTwitterHover(false)}
                     >
@@ -125,7 +125,7 @@ export default function Home() {
                                 ? { color: accentColors[accent] }
                                 : null
                         }
-                        className={`px-6 text-4xl`}
+                        className={` flex justify-end text-5xl`}
                         onMouseOver={() => setDiscordHover(true)}
                         onMouseLeave={() => setDiscordHover(false)}
                     >

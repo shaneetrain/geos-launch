@@ -22,7 +22,7 @@ const Credits = ({ accent }) => {
 
     return (
         <div className="flex flex-row col-span-4 justify-center items-center">
-            <div className="px-3">Project by</div>
+            <div className="pr-3">Project by</div>
             <div className="px-3">
                 <div className="flex flex-row">
                     <div className="px-1">Shane Hanlon</div>

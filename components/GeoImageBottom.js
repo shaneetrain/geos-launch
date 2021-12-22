@@ -13,7 +13,7 @@ const GeoImageBottom = ({ pathHead, pathBody, color }) => {
 
     return (
         <div
-            className="border border-secondary mb-6 xl:mb-8 2xl:mb-12 select-none"
+            className="border border-black mb-6 xl:mb-8 2xl:mb-12 select-none"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
