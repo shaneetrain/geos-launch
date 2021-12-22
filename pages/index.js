@@ -20,6 +20,9 @@ export default function Home() {
         }
     };
 
+    const [discordHover, setDiscordHover] = useState(false);
+    const [twitterHover, setTwitterHover] = useState(false);
+
     return (
         <div
             className=" h-screen w-screen flex justify-center items-center font-relative select-none"
@@ -97,7 +100,16 @@ export default function Home() {
                     <div className="col-span-3"></div>
                 </div>
                 <div className="grid grid-cols-6 justify-between">
-                    <div className="px-6 hover:text-hover text-4xl">
+                    <div
+                        style={
+                            twitterHover
+                                ? { color: accentColors[accent] }
+                                : null
+                        }
+                        className={`px-6 text-4xl`}
+                        onMouseOver={() => setTwitterHover(true)}
+                        onMouseLeave={() => setTwitterHover(false)}
+                    >
                         <a
                             href="https://twitter.com/GeosNFT"
                             target="_blank"
@@ -106,8 +118,17 @@ export default function Home() {
                             ->Twitter
                         </a>
                     </div>
-                    <Credits />
-                    <div className={`hover:text-hover px-6 text-4xl`}>
+                    <Credits accent={accent} />
+                    <div
+                        style={
+                            discordHover
+                                ? { color: accentColors[accent] }
+                                : null
+                        }
+                        className={`px-6 text-4xl`}
+                        onMouseOver={() => setDiscordHover(true)}
+                        onMouseLeave={() => setDiscordHover(false)}
+                    >
                         <a
                             href="https://discord.com"
                             target="_blank"
