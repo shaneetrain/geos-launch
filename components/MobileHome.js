@@ -1,12 +1,9 @@
 import Link from "next/link";
+import Head from "next/head";
 import React, { useState } from "react";
-import Credits from "./Credits";
 import Cursor from "./Cursor";
 import GeoImageMobile from "./GeoImageMobile";
-import Geos from "./Geos";
 import { accentColors } from "../utils/accentColors";
-import Desc from "./Desc";
-import Blurb from "./Blurb";
 import CreditsMobile from "./CreditsMobile";
 
 const MobileHome = () => {
@@ -25,7 +22,15 @@ const MobileHome = () => {
     };
 
     return (
-        <div onClick={handleClickMobile}>
+        <div onClick={handleClickMobile} className="font-relative">
+            <Head>
+                <title>geos</title>
+                <meta
+                    name="description"
+                    content="geos - A generative metaverse project"
+                />
+                <link rel="icon" href="/geos.png" />
+            </Head>
             <Cursor color={accent} />
             <div className="h-screen w-screen row-auto grid grid-rows-7">
                 <div className="row-span-6 h-full w-full">

@@ -13,7 +13,6 @@ const GeoImageMobile = ({ pathHead, pathBody, color, image }) => {
                     height="100"
                     layout="responsive"
                     alt={pathHead}
-                    priority={true}
                     className={`${color}`}
                 />
             </div>
@@ -24,7 +23,6 @@ const GeoImageMobile = ({ pathHead, pathBody, color, image }) => {
                     height="100"
                     layout="responsive"
                     alt={pathBody}
-                    priority={true}
                 />
             </div>
         </div>

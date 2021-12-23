@@ -26,7 +26,6 @@ const GeoImageTop = ({ pathHead, pathBody, color }) => {
                     height="100"
                     layout="responsive"
                     alt={pathHead}
-                    priority={true}
                     className={`${color}`}
                 />
             </div>
@@ -37,7 +36,6 @@ const GeoImageTop = ({ pathHead, pathBody, color }) => {
                     height="100"
                     layout="responsive"
                     alt={pathBody}
-                    priority={true}
                 />
             </div>
         </div>
