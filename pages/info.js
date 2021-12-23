@@ -11,7 +11,7 @@ import Desc from "../components/Desc";
 import Link from "next/link";
 import React from "react";
 
-const info = () => {
+const Info = () => {
     const [accent, setAccent] = useState(0);
 
     const handleClick = () => {
@@ -106,4 +106,4 @@ const info = () => {
     );
 };
 
-export default info;
+export default Info;
