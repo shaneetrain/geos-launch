@@ -123,19 +123,19 @@ const DesktopHome = ({ isMobile }) => {
                     </div>
                     <div className="grid grid-cols-6 justify-evenly">
                         <div
-                            style={
-                                twitterHover
-                                    ? { color: accentColors[accent] }
-                                    : null
-                            }
                             className={` text-5xl flex col-span-3 justify-start items-end`}
-                            onMouseOver={() => setTwitterHover(true)}
-                            onMouseLeave={() => setTwitterHover(false)}
                         >
                             <a
                                 href="https://twitter.com/GeosNFT"
                                 target="_blank"
                                 rel="noreferrer noopener"
+                                onMouseOver={() => setTwitterHover(true)}
+                                onMouseLeave={() => setTwitterHover(false)}
+                                style={
+                                    twitterHover
+                                        ? { color: accentColors[accent] }
+                                        : null
+                                }
                             >
                                 ->twitter
                             </a>
