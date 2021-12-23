@@ -45,17 +45,16 @@ const Info = () => {
                     <Geos accent={accent} />
                 </div>
                 <div className="text-5xl flex items-start justify-end mr-12 mt-12">
-                    <Link
+                    <div
+                        className="w-fit h-fit"
+                        onMouseOver={() => setSoonHover(true)}
+                        onMouseLeave={() => setSoonHover(false)}
                         style={
                             soonHover ? { color: accentColors[accent] } : null
                         }
-                        onMouseOver={() => setSoonHover(true)}
-                        onMouseLeave={() => setSoonHover(false)}
-                        href="/info"
-                        className="h-fit w-fit"
                     >
-                        ->coming soon.
-                    </Link>
+                        <Link href="/">->coming soon.</Link>
+                    </div>
                 </div>
 
                 <div className="flex flex-col justify-center items-center">
@@ -72,13 +71,13 @@ const Info = () => {
                         twitterHover ? { color: accentColors[accent] } : null
                     }
                     className={` text-5xl flex justify-start items-end mb-12 ml-12`}
-                    onMouseOver={() => setTwitterHover(true)}
-                    onMouseLeave={() => setTwitterHover(false)}
                 >
                     <a
                         href="https://twitter.com/GeosNFT"
                         target="_blank"
                         rel="noreferrer noopener"
+                        onMouseOver={() => setTwitterHover(true)}
+                        onMouseLeave={() => setTwitterHover(false)}
                     >
                         ->twitter
                     </a>
