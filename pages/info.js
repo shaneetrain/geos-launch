@@ -9,8 +9,9 @@ import Geos from "../components/Geos";
 import Blurb from "../components/Blurb";
 import Desc from "../components/Desc";
 import Link from "next/link";
+import React from "react";
 
-export default function info() {
+const info = () => {
     const [accent, setAccent] = useState(0);
 
     const handleClick = () => {
@@ -103,4 +104,6 @@ export default function info() {
             </div>
         </div>
     );
-}
+};
+
+export default info;
