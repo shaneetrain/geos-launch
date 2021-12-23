@@ -7,8 +7,9 @@ module.exports = {
         extend: {
             colors: {
                 secondary: "#CCCCCC",
-                primary: "E6E6E6",
+                primary: "#E6E6E6",
                 inactive: "#BFBFBF",
+                darkGray: "#4D4D4D",
                 hover: "#FFF",
                 hoverSocial: "#FFF",
                 accent1: "#f97612",

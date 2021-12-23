@@ -13,15 +13,15 @@ const GeoImageBottom = ({ pathHead, pathBody, color }) => {
 
     return (
         <div
-            className="border border-black mb-6 xl:mb-8 2xl:mb-12 select-none"
+            className="row-span-3 border border-inactive mb-6 select-none"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
             <div className={`${head ? "" : "hidden"}`}>
                 <Image
                     src={pathHead}
-                    width="1000"
-                    height="1000"
+                    width="100"
+                    height="100"
                     layout="responsive"
                     alt={pathHead}
                     priority={true}
@@ -31,8 +31,8 @@ const GeoImageBottom = ({ pathHead, pathBody, color }) => {
             <div className={`${head ? "hidden" : ""}`}>
                 <Image
                     src={pathBody}
-                    width="1000"
-                    height="1000"
+                    width="100"
+                    height="100"
                     layout="responsive"
                     alt={pathBody}
                     priority={true}
