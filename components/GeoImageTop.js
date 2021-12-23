@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { useState } from "react";
+import { isMobile } from "react-device-detect";
 
-const GeoImageTop = ({ pathHead, pathBody, color }) => {
+const GeoImageTop = ({ pathHead, pathBody, color, isMobile }) => {
     const [head, setHead] = useState(false);
     const handleMouseEnter = () => {
         setHead(true);
@@ -27,6 +28,7 @@ const GeoImageTop = ({ pathHead, pathBody, color }) => {
                     layout="responsive"
                     alt={pathHead}
                     className={`${color}`}
+                    priority={!isMobile}
                 />
             </div>
             <div className={`${head ? "hidden" : ""}`}>
@@ -36,6 +38,7 @@ const GeoImageTop = ({ pathHead, pathBody, color }) => {
                     height="100"
                     layout="responsive"
                     alt={pathBody}
+                    priority={!isMobile}
                 />
             </div>
         </div>

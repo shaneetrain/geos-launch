@@ -5,12 +5,13 @@ import { isMobile } from "react-device-detect";
 
 export default function Home() {
     const size = useWindowSize();
+    const isMobile = size.width < 600;
 
-    if (size.width < 600) {
-        return <MobileHome />;
+    if (isMobile) {
+        return <MobileHome isMobile={isMobile} />;
     }
 
-    return <DesktopHome />;
+    return <DesktopHome isMobile={isMobile} />;
 }
 
 // Hook
