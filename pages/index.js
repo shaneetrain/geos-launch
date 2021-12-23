@@ -8,6 +8,7 @@ import { accentColors } from "../utils/accentColors";
 import Geos from "../components/Geos";
 import Blurb from "../components/Blurb";
 import Desc from "../components/Desc";
+import Link from "next/link";
 
 export default function Home() {
     const [accent, setAccent] = useState(0);
@@ -43,7 +44,7 @@ export default function Home() {
                     <div className="grid grid-cols-4 auto-cols-max justify-center items-center">
                         <Geos accent={accent} />
                         <div className="text-5xl col-span-3 flex items-center justify-end">
-                            <a
+                            <Link
                                 style={
                                     soonHover
                                         ? { color: accentColors[accent] }
@@ -54,7 +55,7 @@ export default function Home() {
                                 href="/info"
                             >
                                 ->coming soon.
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="grid grid-cols-5 justify-center items-center">

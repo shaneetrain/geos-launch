@@ -8,6 +8,7 @@ import { accentColors } from "../utils/accentColors";
 import Geos from "../components/Geos";
 import Blurb from "../components/Blurb";
 import Desc from "../components/Desc";
+import Link from "next/link";
 
 export default function info() {
     const [accent, setAccent] = useState(0);
@@ -43,7 +44,7 @@ export default function info() {
                     <Geos accent={accent} />
                 </div>
                 <div className="text-5xl flex items-start justify-end mr-12 mt-12">
-                    <a
+                    <Link
                         style={
                             soonHover ? { color: accentColors[accent] } : null
                         }
@@ -53,7 +54,7 @@ export default function info() {
                         className="h-fit w-fit"
                     >
                         ->coming soon.
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="flex flex-col justify-center items-center">
