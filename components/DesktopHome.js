@@ -119,7 +119,7 @@ const DesktopHome = () => {
                                     ? { color: accentColors[accent] }
                                     : null
                             }
-                            className={` text-5xl flex justify-start items-end`}
+                            className={` text-5xl flex col-span-3 justify-start items-end`}
                             onMouseOver={() => setTwitterHover(true)}
                             onMouseLeave={() => setTwitterHover(false)}
                         >
@@ -131,9 +131,8 @@ const DesktopHome = () => {
                                 ->twitter
                             </a>
                         </div>
-                        {/* <Credits accent={accent} /> */}
                         <div
-                            className={` flex justify-end items-end text-5xl col-span-5`}
+                            className={` flex justify-end items-end text-5xl col-span-3`}
                         >
                             <a
                                 href="https://discord.com"

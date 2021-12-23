@@ -1,25 +1,12 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const GeoImageMobile = ({ pathHead, pathBody, color }) => {
-    const [head, setHead] = useState(true);
-    const handleMouseEnter = () => {
-        setHead(false);
-    };
-
-    const handleMouseLeave = () => {
-        setHead(true);
-    };
-
+const GeoImageMobile = ({ pathHead, pathBody, color, image }) => {
     const bgCol = `bg-${color}`;
 
     return (
-        <div
-            className="select-none"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-        >
-            <div className={`${head ? "" : "hidden"} w-screen`}>
+        <div className="select-none">
+            <div className={`${image ? "" : "hidden"} w-screen`}>
                 <Image
                     src={pathHead}
                     width="100"
@@ -30,7 +17,7 @@ const GeoImageMobile = ({ pathHead, pathBody, color }) => {
                     className={`${color}`}
                 />
             </div>
-            <div className={`${head ? "hidden" : ""} w-screen`}>
+            <div className={`${image ? "hidden" : ""} w-screen`}>
                 <Image
                     src={pathBody}
                     width="100"
