@@ -23,6 +23,7 @@ const GeoImageMobile = ({ pathHead, pathBody, color, image }) => {
                     height="100"
                     layout="responsive"
                     alt={pathBody}
+                    className={`${color}`}
                 />
             </div>
         </div>

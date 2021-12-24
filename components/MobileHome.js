@@ -12,13 +12,16 @@ const MobileHome = () => {
     const [image, setImage] = useState(true);
 
     const handleClickMobile = () => {
-        setDetails(!details);
-        setImage(!image);
         if (accent >= 19) {
             setAccent(0);
         } else {
             setAccent((prev) => prev + 1);
         }
+    };
+
+    const handleSwitch = () => {
+        setDetails(!details);
+        setImage(!image);
     };
 
     return (
@@ -76,7 +79,7 @@ const MobileHome = () => {
                     </div>
                 </div>
                 <div className=" flex items-end justify-end">
-                    <div className="h-fit w-fit">
+                    <div onClick={handleSwitch} className="h-fit w-fit">
                         <GeoImageMobile
                             pathBody="/images/Geo02_body.png"
                             pathHead="/images/Geo02_head.png"
