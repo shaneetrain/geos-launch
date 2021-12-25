@@ -3,13 +3,11 @@ import Head from "next/head";
 import GeoImageTop from "../components/GeoImageTop";
 import GeoImageBottom from "../components/GeoImageBottom";
 import { useState } from "react";
-import Credits from "../components/Credits";
 import Cursor from "../components/Cursor";
 import { accentColors } from "../utils/accentColors";
 import Geos from "../components/Geos";
-import Blurb from "../components/Blurb";
-import Desc from "../components/Desc";
 import Link from "next/link";
+import { geosData } from "../utils/geosDatabase";
 
 const DesktopHome = ({ isMobile }) => {
     const [accent, setAccent] = useState(0);
@@ -61,64 +59,66 @@ const DesktopHome = ({ isMobile }) => {
                     </div>
                     <div className="grid grid-cols-5 justify-center items-center">
                         <GeoImageTop
-                            pathBody="/images/Geo01_body.png"
-                            pathHead="/images/Geo01_head.png"
-                            color="bg-accent1"
+                            pathBody={geosData[0].pathBody}
+                            pathHead={geosData[0].pathHead}
+                            color={geosData[0].color}
                             isMobile={isMobile}
                         />
                         <GeoImageTop
-                            pathBody="/images/Geo02_body.png"
-                            pathHead="/images/Geo02_head.png"
-                            color="bg-accent3"
+                            pathBody={geosData[1].pathBody}
+                            pathHead={geosData[1].pathHead}
+                            color={geosData[1].color}
                             isMobile={isMobile}
                         />
                         <GeoImageTop
-                            pathBody="/images/Geo03_body.png"
-                            pathHead="/images/Geo03_head.png"
-                            color="bg-accent2"
+                            pathBody={geosData[2].pathBody}
+                            pathHead={geosData[2].pathHead}
+                            color={geosData[2].color}
                             isMobile={isMobile}
                         />
                         <GeoImageTop
-                            pathBody="/images/Geo04_body.png"
-                            pathHead="/images/Geo04_head.png"
-                            color="bg-accent4"
+                            pathBody={geosData[3].pathBody}
+                            pathHead={geosData[3].pathHead}
+                            color={geosData[3].color}
                             isMobile={isMobile}
                         />
                         <GeoImageTop
-                            pathBody="/images/Geo05_body.png"
-                            pathHead="/images/Geo05_head.png"
-                            color="bg-accent5"
+                            pathBody={geosData[4].pathBody}
+                            pathHead={geosData[4].pathHead}
+                            color={geosData[4].color}
                             isMobile={isMobile}
                         />
                         <GeoImageBottom
-                            pathBody="/images/Geo06_body.png"
-                            pathHead="/images/Geo06_head.png"
-                            color="bg-accent9"
+                            pathBody={geosData[5].pathBody}
+                            pathHead={geosData[5].pathHead}
+                            color={geosData[5].color}
                             isMobile={isMobile}
                         />
                         <GeoImageBottom
-                            pathBody="/images/Geo07_body.png"
-                            pathHead="/images/Geo07_head.png"
-                            color="bg-accent14"
+                            pathBody={geosData[6].pathBody}
+                            pathHead={geosData[6].pathHead}
+                            color={geosData[6].color}
                             isMobile={isMobile}
                         />
                         <GeoImageBottom
-                            pathBody="/images/Geo08_body.png"
-                            pathHead="/images/Geo08_head.png"
-                            color="bg-accent15"
-                        />
-                        <GeoImageBottom
-                            pathBody="/images/Geo09_body.png"
-                            pathHead="/images/Geo09_head.png"
-                            color="bg-accent8"
+                            pathBody={geosData[7].pathBody}
+                            pathHead={geosData[7].pathHead}
+                            color={geosData[7].color}
                             isMobile={isMobile}
                         />
                         <GeoImageBottom
-                            pathBody="/images/Geo10_body.png"
-                            pathHead="/images/Geo10_head.png"
-                            color="bg-accent12"
+                            pathBody={geosData[8].pathBody}
+                            pathHead={geosData[8].pathHead}
+                            color={geosData[8].color}
                             isMobile={isMobile}
                         />
+                        <GeoImageBottom
+                            pathBody={geosData[9].pathBody}
+                            pathHead={geosData[9].pathHead}
+                            color={geosData[9].color}
+                            isMobile={isMobile}
+                        />
+
                         <div className="col-span-3"></div>
                     </div>
                     <div className="grid grid-cols-6 justify-evenly">

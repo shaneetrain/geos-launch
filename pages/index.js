@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import DesktopHome from "../components/DesktopHome";
 import MobileHome from "../components/MobileHome";
-import { isMobile } from "react-device-detect";
+import SwiperTest from "../components/SwiperTest";
 
 export default function Home() {
     const size = useWindowSize();
     const isMobile = size.width < 600;
 
     if (isMobile) {
-        return <MobileHome isMobile={isMobile} />;
+        return (
+            <MobileHome isMobile={isMobile} />
+            // <SwiperTest />
+        );
     }
 
     return <DesktopHome isMobile={isMobile} />;

@@ -5,6 +5,7 @@ import Cursor from "./Cursor";
 import GeoImageMobile from "./GeoImageMobile";
 import { accentColors } from "../utils/accentColors";
 import CreditsMobile from "./CreditsMobile";
+import SwiperTest from "./SwiperTest";
 
 const MobileHome = () => {
     const [accent, setAccent] = useState(0);
@@ -94,12 +95,7 @@ const MobileHome = () => {
                 </div>
                 <div className=" flex items-end justify-end">
                     <div onClick={handleSwitch} className="h-fit w-fit">
-                        <GeoImageMobile
-                            pathBody="/images/Geo02_body.png"
-                            pathHead="/images/Geo02_head.png"
-                            color="bg-accent3"
-                            image={image}
-                        />
+                        <SwiperTest image={image} />
                     </div>
                 </div>
             </div>
