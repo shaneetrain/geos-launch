@@ -71,10 +71,24 @@ const MobileHome = () => {
                             )}
                         </div>
                         <div className="text-3xl flex items-end justify-start pl-6">
-                            ->twitter
+                            <a
+                                className="h-fit w-fit"
+                                href="https://twitter.com/GeosNFT"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                ->twitter
+                            </a>
                         </div>
                         <div className="text-3xl flex items-end justify-end pr-6">
-                            ->discord
+                            <a
+                                className="h-fit w-fit"
+                                href="https://discord.com"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                ->discord
+                            </a>
                         </div>
                     </div>
                 </div>
