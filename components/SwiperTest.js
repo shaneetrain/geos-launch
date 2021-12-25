@@ -1,15 +1,8 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { geosData } from "../utils/geosDatabase";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-
-// import Swiper core and required modules
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import GeoImageMobile from "./GeoImageMobile";
 
@@ -22,8 +15,9 @@ export default function SwiperTest({ image }) {
             <Swiper
                 spaceBetween={0}
                 centeredSlides={true}
+                speed={1000}
                 autoplay={{
-                    delay: 2500,
+                    delay: 3000,
                     disableOnInteraction: true,
                 }}
                 allowTouchMove={false}
