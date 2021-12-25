@@ -1,20 +1,17 @@
 import { useEffect, useState } from "react";
 import DesktopHome from "../components/DesktopHome";
+import Loading from "../components/Loading";
 import MobileHome from "../components/MobileHome";
-import SwiperTest from "../components/SwiperTest";
-
+import Router from "next/router";
 export default function Home() {
     const size = useWindowSize();
     const isMobile = size.width < 600;
 
-    if (isMobile) {
-        return (
-            <MobileHome isMobile={isMobile} />
-            // <SwiperTest />
-        );
-    }
-
-    return <DesktopHome isMobile={isMobile} />;
+    return isMobile ? (
+        <MobileHome isMobile={isMobile} />
+    ) : (
+        <DesktopHome isMobile={isMobile} />
+    );
 }
 
 // Hook

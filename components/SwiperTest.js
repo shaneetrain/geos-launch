@@ -24,8 +24,9 @@ export default function SwiperTest({ image }) {
                 centeredSlides={true}
                 autoplay={{
                     delay: 2500,
-                    disableOnInteraction: false,
+                    disableOnInteraction: true,
                 }}
+                allowTouchMove={false}
                 pagination={{
                     clickable: false,
                 }}
