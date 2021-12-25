@@ -12,7 +12,7 @@ const MobileHome = () => {
     const [image, setImage] = useState(true);
 
     const handleClickMobile = () => {
-        if (accent >= 19) {
+        if (accent >= accentColors.length - 1) {
             setAccent(0);
         } else {
             setAccent((prev) => prev + 1);

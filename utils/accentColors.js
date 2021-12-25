@@ -4,7 +4,6 @@ const accentColors = [
     "#004d3f",
     "#fbd599",
     "#283cea",
-    "#ffe44e",
     "#ff9d82",
     "#e69dd4",
     "#ecb553",
@@ -18,7 +17,6 @@ const accentColors = [
     "#7ea8fd",
     "#39a46b",
     "#ffffff",
-    "#000000",
 ];
 
 export { accentColors };
