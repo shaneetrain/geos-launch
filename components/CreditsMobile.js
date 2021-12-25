@@ -4,20 +4,8 @@ import { accentColors } from "../utils/accentColors";
 const CreditsMobile = ({ accent }) => {
     const color = accentColors[accent];
 
-    const [shaneInsta, setShaneInsta] = useState(false);
-    const [shaneTwitter, setShaneTwitter] = useState(false);
-    const [rheaInsta, setRheaInsta] = useState(false);
-    const [rheaTwitter, setRheaTwitter] = useState(false);
-    const [chrisInsta, setChrisInsta] = useState(false);
-    const [chrisTwitter, setChrisTwitter] = useState(false);
-    const [sebInsta, setSebInsta] = useState(false);
-    const [sebTwitter, setSebTwitter] = useState(false);
-
     const hoverLinkStyle = {
         color: color,
-    };
-    const inactiveLinkStyle = {
-        color: "#BFBFBF",
     };
 
     return (
@@ -28,7 +16,7 @@ const CreditsMobile = ({ accent }) => {
                     <div className="px-1">Shane Hanlon</div>
                     <div
                         className="px-1"
-                        style={shaneInsta ? hoverLinkStyle : inactiveLinkStyle}
+                        style={hoverLinkStyle}
                         onMouseOver={() => setShaneInsta(true)}
                         onMouseLeave={() => setShaneInsta(false)}
                     >
@@ -43,9 +31,7 @@ const CreditsMobile = ({ accent }) => {
                     <div className="px-1 text-inactive"> / </div>
                     <div
                         className="px-1"
-                        style={
-                            shaneTwitter ? hoverLinkStyle : inactiveLinkStyle
-                        }
+                        style={hoverLinkStyle}
                         onMouseOver={() => setShaneTwitter(true)}
                         onMouseLeave={() => setShaneTwitter(false)}
                     >
@@ -62,7 +48,7 @@ const CreditsMobile = ({ accent }) => {
                     <div className="px-1">Rhea Lelina Manglapus</div>
                     <div
                         className="px-1"
-                        style={rheaInsta ? hoverLinkStyle : inactiveLinkStyle}
+                        style={hoverLinkStyle}
                         onMouseOver={() => setRheaInsta(true)}
                         onMouseLeave={() => setRheaInsta(false)}
                     >
@@ -77,7 +63,7 @@ const CreditsMobile = ({ accent }) => {
                     <div className="px-1 text-inactive"> / </div>
                     <div
                         className="px-1"
-                        style={rheaTwitter ? hoverLinkStyle : inactiveLinkStyle}
+                        style={hoverLinkStyle}
                         onMouseOver={() => setRheaTwitter(true)}
                         onMouseLeave={() => setRheaTwitter(false)}
                     >
@@ -94,7 +80,7 @@ const CreditsMobile = ({ accent }) => {
                     <div className="px-1">Christopher Rutledge</div>
                     <div
                         className="px-1"
-                        style={chrisInsta ? hoverLinkStyle : inactiveLinkStyle}
+                        style={hoverLinkStyle}
                         onMouseOver={() => setChrisInsta(true)}
                         onMouseLeave={() => setChrisInsta(false)}
                     >
@@ -109,9 +95,7 @@ const CreditsMobile = ({ accent }) => {
                     <div className="px-1 text-inactive"> / </div>
                     <div
                         className="px-1"
-                        style={
-                            chrisTwitter ? hoverLinkStyle : inactiveLinkStyle
-                        }
+                        style={hoverLinkStyle}
                         onMouseOver={() => setChrisTwitter(true)}
                         onMouseLeave={() => setChrisTwitter(false)}
                     >
@@ -128,7 +112,7 @@ const CreditsMobile = ({ accent }) => {
                     <div className="px-1">Seb Helene</div>
                     <div
                         className="px-1"
-                        style={sebInsta ? hoverLinkStyle : inactiveLinkStyle}
+                        style={hoverLinkStyle}
                         onMouseOver={() => setSebInsta(true)}
                         onMouseLeave={() => setSebInsta(false)}
                     >
@@ -143,7 +127,7 @@ const CreditsMobile = ({ accent }) => {
                     <div className="px-1 text-inactive"> / </div>
                     <div
                         className="px-1"
-                        style={sebTwitter ? hoverLinkStyle : inactiveLinkStyle}
+                        style={hoverLinkStyle}
                         onMouseOver={() => setSebTwitter(true)}
                         onMouseLeave={() => setSebTwitter(false)}
                     >
