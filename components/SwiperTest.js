@@ -15,7 +15,7 @@ export default function SwiperTest({ image }) {
             <Swiper
                 spaceBetween={0}
                 centeredSlides={true}
-                speed={1000}
+                speed={0}
                 autoplay={{
                     delay: 3000,
                     disableOnInteraction: true,
