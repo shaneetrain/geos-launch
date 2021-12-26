@@ -81,7 +81,7 @@ const MobileHome = () => {
                                 ->twitter
                             </a>
                         </div>
-                        <div className="text-3xl flex items-end justify-end pb-6 pr-6">
+                        <div className="text-3xl flex items-end justify-end pb-6">
                             <a
                                 className="h-fit w-fit"
                                 href="https://discord.com"
