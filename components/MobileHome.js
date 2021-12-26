@@ -71,7 +71,7 @@ const MobileHome = () => {
                                 <CreditsMobile accent={accent} />
                             )}
                         </div>
-                        <div className="text-3xl flex items-end justify-start pl-6">
+                        <div className="text-3xl flex items-end justify-start pb-4 pl-6">
                             <a
                                 className="h-fit w-fit"
                                 href="https://twitter.com/GeosNFT"
@@ -81,7 +81,7 @@ const MobileHome = () => {
                                 ->twitter
                             </a>
                         </div>
-                        <div className="text-3xl flex items-end justify-end pr-6">
+                        <div className="text-3xl flex items-end justify-end pb-4 pr-6">
                             <a
                                 className="h-fit w-fit"
                                 href="https://discord.com"
