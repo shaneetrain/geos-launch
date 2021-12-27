@@ -53,7 +53,7 @@ const DesktopHome = ({ isMobile }) => {
                                         : null
                                 }
                             >
-                                <Link href="/info">->coming soon.</Link>
+                                <Link href="/info">->coming soon</Link>
                             </div>
                         </div>
                     </div>

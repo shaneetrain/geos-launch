@@ -52,7 +52,7 @@ const MobileHome = () => {
 
                         <div className="text-3xl flex flex-col items-end justify-start pr-6 pt-6">
                             <div>coming</div>
-                            <div>soon.</div>
+                            <div>soon</div>
                         </div>
                         <div className="mt-3 col-span-2 flex flex-col justify-center items-center">
                             {details ? (
