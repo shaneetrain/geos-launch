@@ -16,7 +16,7 @@ const GeoImageTop = ({ pathHead, pathBody, color, isMobile }) => {
 
     return (
         <div
-            className="border mt-6 row-span-3 max-w-full h-auto border-inactive justify-center items-start select-none"
+            className="mt-6 row-span-3 max-w-full h-auto border border-inactive justify-center items-start select-none"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >

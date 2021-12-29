@@ -28,7 +28,7 @@ const Info = () => {
 
     return (
         <div
-            className="h-screen w-scree font-relative select-none"
+            className="bg-primary h-full w-screen font-relative select-none"
             onClick={handleClick}
         >
             <Head>
@@ -53,7 +53,7 @@ const Info = () => {
                             soonHover ? { color: accentColors[accent] } : null
                         }
                     >
-                        <Link href="/">->coming soon.</Link>
+                        <Link href="/">->coming soon</Link>
                     </div>
                 </div>
 

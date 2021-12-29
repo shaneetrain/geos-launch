@@ -26,7 +26,7 @@ const MobileHome = () => {
     };
 
     return (
-        <div onClick={handleClickMobile} className="font-relative">
+        <div onClick={handleClickMobile} className="font-relative bg-primary">
             <Head>
                 <title>geos</title>
                 <meta
@@ -39,7 +39,7 @@ const MobileHome = () => {
             <div className="h-screen w-screen row-auto grid grid-rows-7">
                 <div className="row-span-6 h-full w-full">
                     <div className="h-full w-full grid grid-cols-2 grid-rows-3">
-                        <div className="flex flex-row items-start justify-start pl-6 pt-6">
+                        <div className="flex flex-row items-start justify-start pl-6 pt-4">
                             <div className="items-center flex text-3xl">ge</div>
                             <div
                                 style={{ color: `${accentColors[accent]}` }}
@@ -50,9 +50,9 @@ const MobileHome = () => {
                             <div className="items-center flex text-3xl">s</div>
                         </div>
 
-                        <div className="text-3xl flex flex-col items-end justify-start pr-6 pt-6">
+                        <div className="text-3xl flex flex-col items-end justify-start pr-6 pt-4">
                             <div>coming</div>
-                            <div>soon</div>
+                            <div className="-mt-2 bg-transparent">soon</div>
                         </div>
                         <div className="mt-3 col-span-2 flex flex-col justify-center items-center">
                             {details ? (
@@ -71,7 +71,7 @@ const MobileHome = () => {
                                 <CreditsMobile accent={accent} />
                             )}
                         </div>
-                        <div className="text-3xl flex items-end justify-start pb-6 pl-6">
+                        <div className="text-3xl flex items-end justify-start pl-6 pb-4">
                             <a
                                 className="h-fit w-fit"
                                 href="https://twitter.com/GeosNFT"
@@ -81,7 +81,7 @@ const MobileHome = () => {
                                 ->twitter
                             </a>
                         </div>
-                        <div className="text-3xl flex items-end justify-end pl-6 pb-6">
+                        <div className="text-3xl flex items-end justify-end pr-6 pb-4">
                             <a
                                 className="h-fit w-fit"
                                 href="https://discord.com"

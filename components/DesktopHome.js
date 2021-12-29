@@ -26,7 +26,7 @@ const DesktopHome = ({ isMobile }) => {
 
     return (
         <div
-            className=" h-screen w-screen flex justify-center items-center font-relative select-none"
+            className=" bg-primary h-screen w-screen flex justify-center items-center font-relative select-none"
             onClick={handleClick}
         >
             <Head>
@@ -38,11 +38,11 @@ const DesktopHome = ({ isMobile }) => {
                 <link rel="icon" href="/geos.png" />
             </Head>
             <Cursor color={accent} />
-            <div className="2xl:px-16 xl:px-12 lg:px-8 px-6 py-6 h-screen w-screen flex justify-center items-center">
-                <div className="h-fit w-screen">
-                    <div className="grid grid-cols-4 auto-cols-max justify-center items-center">
+            <div className="bg-primary 2xl:px-16 xl:px-12 lg:px-8 px-6 py-6 h-screen w-screen flex justify-center items-center">
+                <div className="bg-primary h-fit w-screen">
+                    <div className="bg-primary grid grid-cols-4 auto-cols-max justify-center items-center">
                         <Geos accent={accent} />
-                        <div className="text-5xl col-span-3 flex items-center justify-end">
+                        <div className="bg-primary text-5xl col-span-3 flex items-center justify-end">
                             <div
                                 className="w-fit h-fit"
                                 onMouseOver={() => setSoonHover(true)}
@@ -121,7 +121,7 @@ const DesktopHome = ({ isMobile }) => {
 
                         <div className="col-span-3"></div>
                     </div>
-                    <div className="grid grid-cols-6 justify-evenly">
+                    <div className="bg-primary grid grid-cols-6 justify-evenly">
                         <div
                             className={` text-5xl flex col-span-3 justify-start items-end`}
                         >
