@@ -24,6 +24,12 @@ const DesktopHome = ({ isMobile }) => {
     const [twitterHover, setTwitterHover] = useState(false);
     const [soonHover, setSoonHover] = useState(false);
 
+    const [discordClick, setDsicordClick] = useState(false);
+
+    const handleDiscordClick = () => {
+        setDsicordClick(!discordClick);
+    };
+
     return (
         <div
             className=" bg-primary h-screen w-screen flex justify-center items-center font-relative select-none"
@@ -53,7 +59,7 @@ const DesktopHome = ({ isMobile }) => {
                                         : null
                                 }
                             >
-                                <Link href="/info">->coming soon</Link>
+                                <Link href="/info">->dropping soon</Link>
                             </div>
                         </div>
                     </div>
@@ -142,21 +148,37 @@ const DesktopHome = ({ isMobile }) => {
                         </div>
                         <div
                             className={` flex justify-end items-end text-5xl col-span-3`}
+                            onClick={handleDiscordClick}
                         >
-                            <a
-                                href="https://discord.com"
-                                target="_blank"
-                                rel="noreferrer noopener"
-                                onMouseOver={() => setDiscordHover(true)}
-                                onMouseLeave={() => setDiscordHover(false)}
-                                style={
-                                    discordHover
-                                        ? { color: accentColors[accent] }
-                                        : null
-                                }
-                            >
-                                ->discord
-                            </a>
+                            {discordClick ? (
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                    onMouseOver={() => setDiscordHover(true)}
+                                    onMouseLeave={() => setDiscordHover(false)}
+                                    style={
+                                        discordHover
+                                            ? { color: accentColors[accent] }
+                                            : null
+                                    }
+                                >
+                                    coming soon
+                                </a>
+                            ) : (
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                    onMouseOver={() => setDiscordHover(true)}
+                                    onMouseLeave={() => setDiscordHover(false)}
+                                    style={
+                                        discordHover
+                                            ? { color: accentColors[accent] }
+                                            : null
+                                    }
+                                >
+                                    ->discord
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>

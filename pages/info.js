@@ -26,6 +26,12 @@ const Info = () => {
     const [twitterHover, setTwitterHover] = useState(false);
     const [soonHover, setSoonHover] = useState(false);
 
+    const [discordClick, setDiscordClick] = useState(false);
+
+    const handleDiscordClick = () => {
+        setDiscordClick(!discordClick);
+    };
+
     return (
         <div
             className="bg-primary h-full w-screen font-relative select-none"
@@ -53,7 +59,7 @@ const Info = () => {
                             soonHover ? { color: accentColors[accent] } : null
                         }
                     >
-                        <Link href="/">->coming soon</Link>
+                        <Link href="/">->dropping soon</Link>
                     </div>
                 </div>
 
@@ -85,20 +91,37 @@ const Info = () => {
                 <div
                     className={` flex justify-end items-end text-5xl mb-12 mr-12`}
                 >
-                    <a
-                        href="https://discord.com"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        onMouseOver={() => setDiscordHover(true)}
-                        onMouseLeave={() => setDiscordHover(false)}
-                        style={
-                            discordHover
-                                ? { color: accentColors[accent] }
-                                : null
-                        }
-                    >
-                        ->discord
-                    </a>
+                    {discordClick ? (
+                        <a
+                            onClick={handleDiscordClick}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            onMouseOver={() => setDiscordHover(true)}
+                            onMouseLeave={() => setDiscordHover(false)}
+                            style={
+                                discordHover
+                                    ? { color: accentColors[accent] }
+                                    : null
+                            }
+                        >
+                            coming soon
+                        </a>
+                    ) : (
+                        <a
+                            onClick={handleDiscordClick}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            onMouseOver={() => setDiscordHover(true)}
+                            onMouseLeave={() => setDiscordHover(false)}
+                            style={
+                                discordHover
+                                    ? { color: accentColors[accent] }
+                                    : null
+                            }
+                        >
+                            ->discord
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

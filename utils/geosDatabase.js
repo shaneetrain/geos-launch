@@ -2,12 +2,12 @@ const geosData = [
     {
         pathBody: "/images/Geo01_body.png",
         pathHead: "/images/Geo01_head.png",
-        color: "bg-accent13",
+        color: "accent13",
     },
     {
         pathBody: "/images/Geo02_body.png",
         pathHead: "/images/Geo02_head.png",
-        color: "bg-accent17",
+        color: "accent17",
     },
     {
         pathBody: "/images/Geo03_body.png",
@@ -27,7 +27,7 @@ const geosData = [
     {
         pathBody: "/images/Geo06_body.png",
         pathHead: "/images/Geo06_head.png",
-        color: "bg-accent11",
+        color: "accent11",
     },
     {
         pathBody: "/images/Geo07_body.png",

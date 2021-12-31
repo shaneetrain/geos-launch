@@ -11,6 +11,7 @@ const MobileHome = () => {
     const [accent, setAccent] = useState(0);
     const [details, setDetails] = useState(true);
     const [image, setImage] = useState(true);
+    const [discordClick, setDiscordClick] = useState(false);
 
     const handleClickMobile = () => {
         if (accent >= accentColors.length - 1) {
@@ -23,6 +24,10 @@ const MobileHome = () => {
     const handleSwitch = () => {
         setDetails(!details);
         setImage(!image);
+    };
+
+    const handleDiscordClick = () => {
+        setDiscordClick(!discordClick);
     };
 
     return (
@@ -51,7 +56,7 @@ const MobileHome = () => {
                         </div>
 
                         <div className="text-3xl flex flex-col items-end justify-start pr-6 pt-4">
-                            <div>coming</div>
+                            <div>dropping</div>
                             <div className="-mt-2 bg-transparent">soon</div>
                         </div>
                         <div className="mt-3 col-span-2 flex flex-col justify-center items-center">
@@ -82,14 +87,25 @@ const MobileHome = () => {
                             </a>
                         </div>
                         <div className="text-3xl flex items-end justify-end pr-6 pb-4">
-                            <a
-                                className="h-fit w-fit"
-                                href="https://discord.com"
-                                target="_blank"
-                                rel="noreferrer noopener"
-                            >
-                                ->discord
-                            </a>
+                            {discordClick ? (
+                                <a
+                                    onClick={handleDiscordClick}
+                                    className="h-fit w-fit text-sm"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                >
+                                    coming soon
+                                </a>
+                            ) : (
+                                <a
+                                    onClick={handleDiscordClick}
+                                    className="h-fit w-fit"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                >
+                                    ->discord
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>
