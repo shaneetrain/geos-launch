@@ -15,7 +15,7 @@ const Info = () => {
     const [accent, setAccent] = useState(0);
 
     const handleClick = () => {
-        if (accent >= 19) {
+        if (accent >= accentColors.length - 1) {
             setAccent(0);
         } else {
             setAccent((prev) => prev + 1);
