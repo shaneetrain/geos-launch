@@ -71,6 +71,12 @@ const DesktopHome = ({ isMobile }) => {
                             isMobile={isMobile}
                         />
                         <GeoImageTop
+                            pathBody={geosData[2].pathBody}
+                            pathHead={geosData[2].pathHead}
+                            color={geosData[2].color}
+                            isMobile={isMobile}
+                        />
+                        <GeoImageTop
                             pathBody={geosData[1].pathBody}
                             pathHead={geosData[1].pathHead}
                             color={geosData[1].color}
@@ -80,12 +86,6 @@ const DesktopHome = ({ isMobile }) => {
                             pathBody={geosData[3].pathBody}
                             pathHead={geosData[3].pathHead}
                             color={geosData[3].color}
-                            isMobile={isMobile}
-                        />
-                        <GeoImageTop
-                            pathBody={geosData[2].pathBody}
-                            pathHead={geosData[2].pathHead}
-                            color={geosData[2].color}
                             isMobile={isMobile}
                         />
                         <GeoImageTop
