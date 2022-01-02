@@ -59,7 +59,7 @@ const DesktopHome = ({ isMobile }) => {
                                         : null
                                 }
                             >
-                                <Link href="/info">->dropping soon</Link>
+                                <Link href="/info">->coming soon</Link>
                             </div>
                         </div>
                     </div>
@@ -77,15 +77,15 @@ const DesktopHome = ({ isMobile }) => {
                             isMobile={isMobile}
                         />
                         <GeoImageTop
-                            pathBody={geosData[2].pathBody}
-                            pathHead={geosData[2].pathHead}
-                            color={geosData[2].color}
-                            isMobile={isMobile}
-                        />
-                        <GeoImageTop
                             pathBody={geosData[3].pathBody}
                             pathHead={geosData[3].pathHead}
                             color={geosData[3].color}
+                            isMobile={isMobile}
+                        />
+                        <GeoImageTop
+                            pathBody={geosData[2].pathBody}
+                            pathHead={geosData[2].pathHead}
+                            color={geosData[2].color}
                             isMobile={isMobile}
                         />
                         <GeoImageTop
