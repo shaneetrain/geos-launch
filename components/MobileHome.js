@@ -30,6 +30,8 @@ const MobileHome = () => {
         setDiscordClick(!discordClick);
     };
 
+    const accentText = `text-${accentColors[accent]}`;
+
     return (
         <div onClick={handleClickMobile} className="font-relative bg-primary">
             <Head>
@@ -77,24 +79,20 @@ const MobileHome = () => {
                             )}
                         </div>
                         <div className="text-3xl flex items-end justify-start pl-6 pb-4">
-                            <a
-                                className="h-fit w-fit"
-                                href="https://twitter.com/GeosNFT"
-                                target="_blank"
-                                rel="noreferrer noopener"
-                            >
-                                ->twitter
-                            </a>
-                        </div>
-                        <div className="text-3xl flex items-end justify-end pr-6 pb-4">
                             {discordClick ? (
                                 <a
                                     onClick={handleDiscordClick}
-                                    className="h-fit w-fit text-sm"
+                                    className="h-fit w-fit"
                                     target="_blank"
                                     rel="noreferrer noopener"
+                                    style={{ color: `${accentColors[accent]}` }}
                                 >
-                                    coming soon
+                                    <div className={`bg-transparent`}>
+                                        coming
+                                    </div>
+                                    <div className="bg-transparent -mt-2">
+                                        soon
+                                    </div>
                                 </a>
                             ) : (
                                 <a
@@ -106,6 +104,16 @@ const MobileHome = () => {
                                     ->discord
                                 </a>
                             )}
+                        </div>
+                        <div className="text-3xl flex items-end justify-end pr-6 pb-4">
+                            <a
+                                className="h-fit w-fit"
+                                href="https://twitter.com/GeosNFT"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                ->twitter
+                            </a>
                         </div>
                     </div>
                 </div>
