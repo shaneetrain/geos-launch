@@ -71,25 +71,8 @@ const Info = () => {
                 <div className="flex justify-start items-center">
                     <Credits accent={accent} />
                 </div>
-
                 <div
-                    style={
-                        twitterHover ? { color: accentColors[accent] } : null
-                    }
-                    className={` text-5xl flex justify-start items-end mb-12 ml-12`}
-                >
-                    <a
-                        href="https://twitter.com/GeosNFT"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        onMouseOver={() => setTwitterHover(true)}
-                        onMouseLeave={() => setTwitterHover(false)}
-                    >
-                        ->twitter
-                    </a>
-                </div>
-                <div
-                    className={` flex justify-end items-end text-5xl mb-12 mr-12`}
+                    className={` flex justify-start items-end text-5xl mb-12 ml-12`}
                 >
                     {discordClick ? (
                         <a
@@ -122,6 +105,22 @@ const Info = () => {
                             ->discord
                         </a>
                     )}
+                </div>
+                <div
+                    style={
+                        twitterHover ? { color: accentColors[accent] } : null
+                    }
+                    className={` text-5xl flex justify-end items-end mb-12 mr-12`}
+                >
+                    <a
+                        href="https://twitter.com/GeosNFT"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        onMouseOver={() => setTwitterHover(true)}
+                        onMouseLeave={() => setTwitterHover(false)}
+                    >
+                        ->twitter
+                    </a>
                 </div>
             </div>
         </div>

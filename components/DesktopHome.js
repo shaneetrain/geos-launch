@@ -129,25 +129,7 @@ const DesktopHome = ({ isMobile }) => {
                     </div>
                     <div className="bg-primary grid grid-cols-6 justify-evenly">
                         <div
-                            className={` text-5xl flex col-span-3 justify-start items-end`}
-                        >
-                            <a
-                                href="https://twitter.com/GeosNFT"
-                                target="_blank"
-                                rel="noreferrer noopener"
-                                onMouseOver={() => setTwitterHover(true)}
-                                onMouseLeave={() => setTwitterHover(false)}
-                                style={
-                                    twitterHover
-                                        ? { color: accentColors[accent] }
-                                        : null
-                                }
-                            >
-                                ->twitter
-                            </a>
-                        </div>
-                        <div
-                            className={` flex justify-end items-end text-5xl col-span-3`}
+                            className={` flex justify-start items-end text-5xl col-span-3`}
                             onClick={handleDiscordClick}
                         >
                             {discordClick ? (
@@ -179,6 +161,24 @@ const DesktopHome = ({ isMobile }) => {
                                     ->discord
                                 </a>
                             )}
+                        </div>
+                        <div
+                            className={` text-5xl flex col-span-3 justify-end items-end`}
+                        >
+                            <a
+                                href="https://twitter.com/GeosNFT"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                onMouseOver={() => setTwitterHover(true)}
+                                onMouseLeave={() => setTwitterHover(false)}
+                                style={
+                                    twitterHover
+                                        ? { color: accentColors[accent] }
+                                        : null
+                                }
+                            >
+                                ->twitter
+                            </a>
                         </div>
                     </div>
                 </div>

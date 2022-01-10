@@ -63,12 +63,12 @@ const MobileHome = () => {
                         </div>
                         <div className="mt-3 col-span-2 flex flex-col justify-center items-center">
                             {details ? (
-                                <div className="my-2">
+                                <div className="my-2 flex flex-col justify-center items-center">
                                     <div className="text-sm">
-                                        lorem ipsum dolor sit amet.
+                                        Sculpted from Earth.
                                     </div>
                                     <div className="text-sm pb-6">
-                                        connsectetur aldishoisn elit
+                                        Built for the Metaverse.
                                     </div>
                                     <div className="text-sm">
                                         A Generative Avatar Project.
