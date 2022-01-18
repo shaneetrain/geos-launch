@@ -63,7 +63,7 @@ const DesktopHome = ({ isMobile }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-5 justify-center items-center">
+                    <div className="grid grid-cols-5 ">
                         <GeoImageTop
                             pathBody={geosData[0].pathBody}
                             pathHead={geosData[0].pathHead}
@@ -88,6 +88,7 @@ const DesktopHome = ({ isMobile }) => {
                             color={geosData[3].color}
                             isMobile={isMobile}
                         />
+
                         <GeoImageTop
                             pathBody={geosData[4].pathBody}
                             pathHead={geosData[4].pathHead}
