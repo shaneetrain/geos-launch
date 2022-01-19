@@ -63,7 +63,7 @@ const DesktopHome = ({ isMobile }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-5 ">
+                    <div className="grid grid-cols-5">
                         <GeoImageTop
                             pathBody={geosData[0].pathBody}
                             pathHead={geosData[0].pathHead}
@@ -130,7 +130,7 @@ const DesktopHome = ({ isMobile }) => {
                     </div>
                     <div className="bg-primary grid grid-cols-6 justify-evenly">
                         <div
-                            className={` flex justify-start items-end text-5xl col-span-3`}
+                            className={` h-fit w-fit flex justify-start items-end text-5xl col-span-3`}
                             onClick={handleDiscordClick}
                         >
                             {discordClick ? (

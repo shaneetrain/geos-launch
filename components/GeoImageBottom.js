@@ -13,7 +13,7 @@ const GeoImageBottom = ({ pathHead, pathBody, color, isMobile }) => {
 
     return (
         <div
-            className="row-span-3 border border-inactive mb-6 select-none"
+            className="row-span-3 border-inactive border mb-6 select-none"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
