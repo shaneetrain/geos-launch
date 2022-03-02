@@ -124,38 +124,6 @@ const Credits = ({ accent }) => {
                         </a>
                     </div>
                 </div>
-                <div className="flex flex-row">
-                    <div className="px-1">Seb Helene</div>
-                    <div
-                        className="px-1"
-                        style={sebInsta ? hoverLinkStyle : inactiveLinkStyle}
-                        onMouseOver={() => setSebInsta(true)}
-                        onMouseLeave={() => setSebInsta(false)}
-                    >
-                        <a
-                            href="https://www.instagram.com/seb_scribbles/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            Instagram
-                        </a>
-                    </div>
-                    <div className="px-1 text-inactive"> / </div>
-                    <div
-                        className="px-1"
-                        style={sebTwitter ? hoverLinkStyle : inactiveLinkStyle}
-                        onMouseOver={() => setSebTwitter(true)}
-                        onMouseLeave={() => setSebTwitter(false)}
-                    >
-                        <a
-                            href="https://twitter.com/SebastianHelene"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            Twitter
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     );

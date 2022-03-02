@@ -108,38 +108,6 @@ const CreditsMobile = ({ accent }) => {
                         </a>
                     </div>
                 </div>
-                <div className="flex flex-row justify-center">
-                    <div className="px-1">Seb Helene</div>
-                    <div
-                        className="px-1"
-                        style={hoverLinkStyle}
-                        onMouseOver={() => setSebInsta(true)}
-                        onMouseLeave={() => setSebInsta(false)}
-                    >
-                        <a
-                            href="https://www.instagram.com/seb_scribbles/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            Instagram
-                        </a>
-                    </div>
-                    <div className="px-1 text-inactive"> / </div>
-                    <div
-                        className="px-1"
-                        style={hoverLinkStyle}
-                        onMouseOver={() => setSebTwitter(true)}
-                        onMouseLeave={() => setSebTwitter(false)}
-                    >
-                        <a
-                            href="https://twitter.com/SebastianHelene"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            Twitter
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     );
