@@ -59,7 +59,7 @@ const Info = () => {
                             soonHover ? { color: accentColors[accent] } : null
                         }
                     >
-                        <Link href="/">->dropping soon</Link>
+                        <Link href="/">->dropping soonish</Link>
                     </div>
                 </div>
 
