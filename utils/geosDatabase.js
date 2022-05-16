@@ -2,22 +2,22 @@ const geosData = [
     {
         pathBody: "/images/Geo01_body.png",
         pathHead: "/images/Geo01_head.png",
-        color: "accent13",
+        color: "bg-accent9",
     },
     {
         pathBody: "/images/Geo02_body.png",
         pathHead: "/images/Geo02_head.png",
-        color: "accent17",
+        color: "bg-accent5",
     },
     {
         pathBody: "/images/Geo03_body.png",
         pathHead: "/images/Geo03_head.png",
-        color: "bg-accent9",
+        color: "bg-accent2",
     },
     {
         pathBody: "/images/Geo04_body.png",
         pathHead: "/images/Geo04_head.png",
-        color: "bg-accent2",
+        color: "bg-accent8",
     },
     {
         pathBody: "/images/Geo05_body.png",
@@ -27,7 +27,7 @@ const geosData = [
     {
         pathBody: "/images/Geo06_body.png",
         pathHead: "/images/Geo06_head.png",
-        color: "accent11",
+        color: "bg-accent15",
     },
     {
         pathBody: "/images/Geo07_body.png",
